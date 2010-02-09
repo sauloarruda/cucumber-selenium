@@ -14,10 +14,6 @@ Before do
   @browser = browser
 end
 
-After do
-  browser.capture_entire_page_screenshot File.dirname(self.path) + "screen.png"
-end
-
 # "after all"
 at_exit do
   browser.stop

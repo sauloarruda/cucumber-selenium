@@ -1,7 +1,7 @@
 class LoginController < ApplicationController
   
   def entrar
-    if (params[:login] == "sauloarruda" and params[:senha] == "secret1")
+    if (params[:login] == "sauloarruda" and params[:senha] == "secret")
       session[:login] = "sauloarruda"
       redirect_to "/home"
     else
