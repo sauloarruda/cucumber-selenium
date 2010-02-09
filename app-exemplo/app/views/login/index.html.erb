@@ -1,0 +1,7 @@
+<p>Autenticação</p>
+<%= form_tag "/login/entrar"%>
+	<%= flash[:error] %><br/>
+	Login: <%= text_field_tag :login %><br/>
+	Senha: <%= password_field_tag :senha %><br/>
+	<%= submit_tag "Entrar" %>
+</form>
